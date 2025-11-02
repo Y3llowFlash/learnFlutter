@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebasetestapp/firebase_options.dart';
+import 'package:firebasetestapp/screens/event_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
@@ -27,17 +28,7 @@ class MyApp extends StatelessWidget{
           theme: ThemeData(
             primarySwatch: Colors.orange,
           ),
-          home: const Scaffold(
-
-            body: Center(
-              child: 
-                Text(
-                  "Retrieving data from Firestore 🔥",
-                  style: TextStyle(fontSize: 32),
-                ),
-            ),
-
-          ),
+          home: const EventScreen(),
       );
 
   }
